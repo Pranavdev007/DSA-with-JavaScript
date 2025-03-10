@@ -5,8 +5,7 @@
 
 // Input: nums = [-1,0,3,5,9,12], target = 9  ----->>>>>  Output:  4
 // Input: nums = [-1,0,3,5,9,12], target = 2  ----->>>>>  Output: -1
-
-function search(nums, target) {
++function search(nums, target) {
   let start = 0;
   let end = nums.length - 1;
 
@@ -23,7 +22,7 @@ function search(nums, target) {
   }
 
   return -1;
-}
+};
 
 // Time Complexity  - O(logn)
 // Space Complexity - O(1)
