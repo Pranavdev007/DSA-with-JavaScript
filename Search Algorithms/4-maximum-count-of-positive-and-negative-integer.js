@@ -11,26 +11,26 @@
 // mid = 3 => nums[3] = 1
 
 console.log(maximumCount([-2, -1, -1, 1, 2, 3]));
-// function maximumCount(nums) {
-//   return Math.max(negative(nums), positive(nums));
-// }
-// function positive(nums) {
-//   let start = 0;
-//   let end = nums.length - 1;
-//   while (start < end) {
-//     let middle = Math.floor((start + end) / 2);
-//     if (nums[middle] > 0) end = middle;
-//     else start = middle + 1;
-//   }
-//   return nums[nums.length - 1] <= 0 ? 0 : nums.length - start;
-// }
-// function negative(nums) {
-//   let start = 0;
-//   let end = nums.length - 1;
-//   while (start < end) {
-//     let middle = Math.ceil((start + end) / 2);
-//     if (nums[middle] < 0) start = middle;
-//     else end = middle - 1;
-//   }
-//   return nums[0] >= 0 ? 0 : start + 1;
-// }
+function maximumCount(nums) {
+  return Math.max(negative(nums), positive(nums));
+}
+function positive(nums) {
+  let start = 0;
+  let end = nums.length - 1;
+  while (start < end) {
+    let middle = Math.floor((start + end) / 2);
+    if (nums[middle] > 0) end = middle;
+    else start = middle + 1;
+  }
+  return nums[nums.length - 1] <= 0 ? 0 : nums.length - start;
+}
+function negative(nums) {
+  let start = 0;
+  let end = nums.length - 1;
+  while (start < end) {
+    let middle = Math.ceil((start + end) / 2);
+    if (nums[middle] < 0) start = middle;
+    else end = middle - 1;
+  }
+  return nums[0] >= 0 ? 0 : start + 1;
+}
