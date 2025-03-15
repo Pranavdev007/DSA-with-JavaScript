@@ -35,25 +35,25 @@
 // 4   (0 1 0 0)
 //        ↑   ↑
 
-// function hammingDistance(x, y) {
-//     x=x.toString(2)
-//     y=y.toString(2)
+function hammingDistance(x, y) {
+  x = x.toString(2);
+  y = y.toString(2);
 
-//     if (x.length < y.length) {
-//         while(x.length!==y.length) x="0"+x
-//     } else {
-//          while(x.length!==y.length) y="0"+y
-//     }
+  if (x.length < y.length) {
+    while (x.length !== y.length) x = "0" + x;
+  } else {
+    while (x.length !== y.length) y = "0" + y;
+  }
 
-//     let distance = 0;
+  let distance = 0;
 
-//     for (let i = 0; i < x.length; i++){
-//         if (x[i] !== y[i]) {
-//             distance++
-//         }
-//     }
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] !== y[i]) {
+      distance++;
+    }
+  }
 
-//     return distance
-// }
+  return distance;
+}
 
 console.log(hammingDistance(2, 9));
