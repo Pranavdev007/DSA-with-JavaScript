@@ -42,7 +42,7 @@ function createMatrix(n) {
   return matrix;
 }
 
-[[1, 2, 3], [], []];
+// [[1, 2, 3], [], []];
 
 // example usage
 const matrix = createMatrix(10);
