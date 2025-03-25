@@ -31,13 +31,13 @@ function goToLunch(person) {
 
 // Loops vs Recursion
 
-// function multiply(arr) {
-//   let product = 1;
-//   for (let i = 0; i < arr.length; i++) {
-//     product *= arr[i];
-//   }
-//   return product;
-// }
+function multiply(arr) {
+  let product = 1;
+  for (let i = 0; i < arr.length; i++) {
+    product *= arr[i];
+  }
+  return product;
+}
 
 function multiply(arr) {
   console.log(arr);
