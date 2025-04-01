@@ -10,3 +10,28 @@
 // Input: intervals = [[1,4],[4,5]]
 // Output: [[1,5]]
 // Explanation: Intervals [1,4] and [4,5] are considered overlapping.
+
+var merge = function (intervals) {
+  intervals.sort((a, b) => a[0] - b[0]);
+  let mergedArr = [intervals[0]];
+  for (i = 1; i < intervals.length; i++) {
+    let lastIndex = mergedArr.length - 1;
+    let lastElt = mergedArr[lastIndex][1];
+    if (intervals[i][0] <= lastElt) {
+      mergedArr[lastIndex][1] = Math.max(
+        intervals[i][1],
+        mergedArr[lastIndex][1]
+      );
+    } else mergedArr.push(intervals[i]);
+  }
+  return mergedArr;
+};
+
+console.log(
+  merge([
+    [1, 3],
+    [2, 6],
+    [8, 10],
+    [15, 18],
+  ])
+);
