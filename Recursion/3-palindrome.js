@@ -2,7 +2,7 @@
 // Input: x = 121      ----->>>>>      Output: true;
 
 function isPalindrome(str) {
-  str = str.replace(/[^a-z0-9]/i, "").toLowerCase();
+  // str = str.replace(/[^a-z0-9]/i, "").toLowerCase();
   const len = str.length;
 
   if (len <= 1) return true;
