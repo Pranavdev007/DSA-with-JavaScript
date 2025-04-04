@@ -4,6 +4,10 @@
 // Input: nums = [4,3,2,7,8,2,3,1]
 // Output: [5,6]
 
+// Example 2:
+// Input: nums = [1,1]
+// Output: [2]
+
 var findDisappearedNumbers = function (arr) {
   let result = [];
 
@@ -17,7 +21,6 @@ var findDisappearedNumbers = function (arr) {
       arr[index] *= -1; // Mark as visited by making it negative
     }
   }
-
   // Second pass: the indices with positive numbers are the missing numbers
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > 0) {
@@ -25,7 +28,6 @@ var findDisappearedNumbers = function (arr) {
       result.push(i + 1);
     }
   }
-
   // Return all missing numbers
   return result;
 };
