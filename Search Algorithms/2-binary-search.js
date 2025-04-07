@@ -9,6 +9,7 @@
   let start = 0;
   let end = nums.length - 1;
 
+  //Ensures all possible indices are searched, including when there's only one element left.
   while (start <= end) {
     let middle = Math.floor((start + end) / 2);
 
