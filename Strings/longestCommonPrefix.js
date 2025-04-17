@@ -1,3 +1,10 @@
+// Input: strs = ["flower","flow","flight"]
+// Output: "fl"
+
+// Input: strs = ["dog","racecar","car"]
+// Output: ""
+// Explanation: There is no common prefix among the input strings.
+
 function longestCommonPrefix(strs) {
   // If the array is empty, return an empty string
   if (!strs.length) return "";
