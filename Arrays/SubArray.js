@@ -1,4 +1,11 @@
 // ==> All SubArrays and SubArrays Sum
+// Input: arr[] = [1, 2, 3]
+// Output: 20
+// Explanation: {1} + {2} + {3} + {2 + 3} + {1 + 2} + {1 + 2 + 3} = 20
+
+// Input: arr[] = [1, 2, 3, 4]
+// Output: 50
+
 function subArray(arr) {
   let result = []; // To store all subarrays
   let maxSum = 0; // To store the sum of all subarrays
@@ -19,4 +26,4 @@ function subArray(arr) {
   // Return both the list of subarrays and the total sum
   return { maxSum, result };
 }
-console.log(subArray([1, 2, 3]));
+console.log(subArray([1, 2, 3, 4]));
