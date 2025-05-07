@@ -11,3 +11,18 @@ function isPalindrome(str) {
 }
 
 console.log(isPalindrome("121"));
+
+// When Input is Number
+
+// var isPalindrome = function (num) {
+//   if (num < 0) return false;
+
+//   const str = num.toString();
+
+//   function isPalindromeRecursive(s) {
+//     if (s.length <= 1) return true;
+//     if (s[0] !== s[s.length - 1]) return false;
+//     return isPalindromeRecursive(s.slice(1, -1));
+//   }
+//   return isPalindromeRecursive(str);
+// };
