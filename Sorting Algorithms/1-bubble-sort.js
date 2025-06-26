@@ -23,9 +23,3 @@ console.log(bubbleSort([29, 10, 14, 37, 14]));
 // Average Time Complexity = O(n^2)
 
 // Space Complexity = O(1)
-
-// Bubble Sort: Repeatedly swaps adjacent elements if they are in the wrong order, moving the largest to the end in each pass.
-// Selection Sort: Repeatedly selects the smallest element from the unsorted portion and swaps it with the first unsorted element.
-// Insertion Sort: Builds a sorted list by picking elements one by one and inserting them into their correct position.
-// Merge Sort: Recursively divide the array into halves → sort each half → merge sorted halves.
-// Quick Sort: Choose a pivot → partition the array into elements less than and greater than the pivot → recursively sort the partitions.
